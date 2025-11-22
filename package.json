@@ -1,8 +1,8 @@
 {
   "name": "canvas-sequencer-ts",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Store, serialize, parse, and execute sequences of canvas context instructions.",
-  "author": "Michael van der Kamp <michael.vanderkamp@usask.ca>",
+  "author": "Colin",
   "type": "module",
   "types": "./dist/index.d.ts",
   "exports": {
