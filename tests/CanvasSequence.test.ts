@@ -1,6 +1,6 @@
-import { describe, test, expect, vi } from 'vitest';
-import CanvasSequence from '../src/CanvasSequence.js';
+import { describe, expect, test, vi } from 'vitest';
 import CanvasAtom from '../src/CanvasAtom.js';
+import CanvasSequence from '../src/CanvasSequence.js';
 
 describe('CanvasSequence', () => {
   describe('constructor()', () => {

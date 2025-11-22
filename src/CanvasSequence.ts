@@ -79,7 +79,7 @@ interface SequenceData {
 }
 
 class CanvasSequence {
-  [symbols.sequence]: any[];
+  [key: symbol]: any;
 
   constructor(data: SequenceData | null = null) {
     this[symbols.sequence] = [];
@@ -99,7 +99,7 @@ class CanvasSequence {
 
   execute(context: CanvasRenderingContext2D) {
     context.save();
-    this[symbols.sequence].forEach(a => a.execute(context));
+    this[symbols.sequence].forEach((a: any) => a.execute(context));
     context.restore();
   }
 

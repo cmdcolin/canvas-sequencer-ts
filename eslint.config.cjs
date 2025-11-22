@@ -9,9 +9,6 @@ module.exports = [
       ecmaVersion: 2020,
       sourceType: 'module',
       parser: tsparser,
-      parserOptions: {
-        project: './tsconfig.json',
-      },
       globals: {
         window: 'readonly',
         document: 'readonly',

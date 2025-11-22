@@ -1,4 +1,4 @@
-import { describe, test, expect, vi } from 'vitest';
+import { describe, expect, test, vi } from 'vitest';
 import CanvasBlueprint from '../src/CanvasBlueprint.js';
 import CanvasSequence from '../src/CanvasSequence.js';
 

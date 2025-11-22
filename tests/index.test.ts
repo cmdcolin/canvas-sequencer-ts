@@ -1,5 +1,5 @@
-import { test, expect } from 'vitest';
-import { CanvasSequence, CanvasBlueprint } from '../index.js';
+import { CanvasBlueprint, CanvasSequence } from '../index.js';
+import { expect, test } from 'vitest';
 
 test('Classes are available', () => {
   expect(CanvasSequence).toBeInstanceOf(Function);
