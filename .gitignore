@@ -22,3 +22,4 @@ coverage
 .parcel-cache/
 esm
 dist
+.eslintcache

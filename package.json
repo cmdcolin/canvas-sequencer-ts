@@ -1,5 +1,5 @@
 {
-  "name": "canvas-sequencer",
+  "name": "canvas-sequencer-ts",
   "version": "3.1.0",
   "description": "Store, serialize, parse, and execute sequences of canvas context instructions.",
   "author": "Michael van der Kamp <michael.vanderkamp@usask.ca>",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mvanderkamp/canvas-sequencer.git"
+    "url": "git+https://github.com/cmdcolin/canvas-sequencer-ts.git"
   },
   "keywords": [
     "javascript",
@@ -38,10 +38,6 @@
     "parse"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mvanderkamp/canvas-sequencer/issues"
-  },
-  "homepage": "https://github.com/mvanderkamp/canvas-sequencer#readme",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
