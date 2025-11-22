@@ -41,7 +41,7 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint index.ts src tests",
+    "lint": "eslint src tests",
     "clean": "rimraf dist esm",
     "build:esm": "tsc --outDir esm",
     "build:es5": "tsc --module commonjs --outDir dist",
