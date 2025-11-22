@@ -3,8 +3,10 @@
   "version": "3.1.0",
   "description": "Store, serialize, parse, and execute sequences of canvas context instructions.",
   "author": "Michael van der Kamp <michael.vanderkamp@usask.ca>",
-  "source": "index.js",
+  "type": "module",
+  "source": "index.ts",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "test": "tests"
   },
@@ -33,28 +35,29 @@
   },
   "homepage": "https://github.com/mvanderkamp/canvas-sequencer#readme",
   "scripts": {
-    "build": "parcel build --no-source-maps",
+    "build": "tsc",
+    "build:parcel": "parcel build --no-source-maps",
     "build:debug": "parcel build --no-optimize",
     "clean": "rm -rf dist",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "lint": "eslint index.js src tests",
-    "lint:fix": "eslint index.js src tests --fix",
+    "coveralls": "vitest run --coverage && cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint index.ts src tests",
+    "lint:fix": "eslint index.ts src tests --fix",
     "prepare": "npm run build",
     "release": "npm run lint && npm test && npm run build && npm run coveralls",
-    "test": "jest",
-    "test:debug": "node inspect $(npm bin)/jest --runInBand"
-  },
-  "jest": {
-    "testEnvironmentOptions": {
-      "url": "http://localhost/"
-    }
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
     "coveralls-next": "^4.2.0",
     "eslint": "^9.32.0",
     "jest": "^29.7.0",
-    "parcel": "^2.10.2"
+    "parcel": "^2.10.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.13"
   }
 }
