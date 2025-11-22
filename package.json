@@ -1,6 +1,6 @@
 {
   "name": "canvas-sequencer-ts",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Store, serialize, parse, and execute sequences of canvas context instructions.",
   "author": "Colin",
   "type": "module",
